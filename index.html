@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		body {background-color: #ffe600  }
+		table {
+			   width: 80%; 
+			   margin-left: 10%;
+ 		       color:#000;
+ 		       background:#fff;
+ 		       font-size: 10px;
+			}
+        ul li {
+            display: inline-block;
+        }
+	</style>
+</head>
+<body>
+
+
+    <script language="JavaScript" type="text/javascript">  
+
+  
+        
+    </script> 
+	<script src="wang.js"></script>
+	<script>
+       
+	</script>
+    <!--增加直接输入文件功能-->
+    <input type="file" id="inputBox">
+    <div >  
+        <form action="#" id="chooseForm" method="#">
+            <label for="testValue"><input type="radio" id="testValue" name="choose" value="testValue">加工测试值</li></label>
+            <label for="name"><input type="radio"  id="name" name="choose" value="name">加工名字</li></label>
+            <label for="lowValue"><input type="radio"  id="lowValue" name="choose" value="lowValue">加工下限</li></label>
+            <label for="highValue"><input type="radio"  id="highValue" name="choose" value="highValue">加工上限</li></label>
+            <label for="type"><input type="radio"  id="type" name="choose" value="type">加工类型</li></label>
+    		<label for="input_btn"><input type="button" id="input_btn" value="加工"></label>
+        </form>
+
+        <textarea name="" id="input_test" cols="30" rows="10"placehold="输入"></textarea> 
+        <input type="button" id="input_clear" value="清空输入">
+		<input type="button" id="table_clear" value="清空表格">
+		<input type="button" id="all_choose" value="全选" />
+		
+    	<button type="button" id ="export_excel">导出Excel</button>  
+	</div>  
+	<div id="myDiv">  
+		<table  width="100%" border="1" cellspacing="0" cellpadding="0">  
+			<tbody id="tableExcel"></tbody>
+		</table> 
+	</div>  
+</body>
+</html>
